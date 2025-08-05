@@ -1,0 +1,66 @@
+import matplotlib.pyplot as plt
+#BARCHART
+categories=['A','B','C']
+values=[10,25,15]
+plt.bar(categories,values)
+plt.title("BarChartExample")
+plt.xlabel("Categories")
+plt.ylabel("Values")
+plt.show()
+
+#BOXPLOT
+data = [ [10, 12, 14, 15, 18, 20, 22],
+         [8, 9, 11, 13, 17, 19, 21],
+         [14, 16, 18, 20, 23, 25, 27] ]
+plt.boxplot(data)
+plt.title("BoxplotExample")
+plt.xlabel("Groups")
+plt.ylabel("Values")
+plt.show()
+
+#BUBBLECHART
+
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 1, 5, 3]
+sizes = [100, 300, 50, 400, 200] # Represents the third variable
+plt.scatter(x, y, s=sizes, alpha=0.5)
+plt.title('Bubble Chart Example')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.show()
+
+#LINE CHART
+X=[10,20,30,40]
+Y=[20,25,35,55]
+plt.plot(X,Y)
+plt.title("LineplotExample")
+plt.xlabel("X-Axis")
+plt.ylabel("Y-axis")
+plt.show()
+
+#HISTOGRAM
+data = [1, 2, 2, 3, 3, 3, 4, 4, 5]
+plt.hist(data, bins=5)
+plt.title('Histogram Example')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.show()
+
+#SCATTER PLOT
+
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 1, 5, 3]
+plt.scatter(x, y)
+plt.title('Scatter Plot Example')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.show()
+
+#PIE CHART
+
+labels = ['Category A', 'Category B', 'Category C']
+sizes = [30, 45, 25]
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+plt.title('Pie Chart Example')
+plt.axis('equal') # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.show()
