@@ -1,0 +1,19 @@
+import numpy as np
+rows = int(input("Enter the number of rows: "))
+cols = int(input("Enter the number of columns: "))
+matrix = []
+print("Enter the elements row by row: ")
+for i in range (rows):
+    row=[]
+    for j in range (cols):
+        row.append(int(input()))
+    matrix.append(row)
+print("2D matrix:\n ")
+for i in range(rows):
+    for j in range(cols):
+        print(matrix[i][j], end=" ")
+    print()
+print("Rank of the matrix: \n")
+matrixa=np.array(matrix)
+rank_matrix=np.linalg.matrix_rank(matrixa)
+print(rank_matrix)
