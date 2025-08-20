@@ -1,0 +1,27 @@
+import numpy as np
+a=int(input("Enter no.of rows:"))
+b=int(input("Enter no.of columns:"))
+matrixa= []
+
+print("Enter elements row wise:")
+for i in range(a):
+    c=[]
+    for j in range(b):
+        c.append(int(input()))
+    matrixa.append(c)
+
+d=int(input("Enter no.of rows:"))
+e=int(input("Enter no.of columns:"))
+matrixb= []
+
+if b==d:
+    print("Enter elements row wise:")
+    for i in range(d):
+        f=[]
+        for j in range(e):
+            f.append(int(input()))
+        matrixb.append(f)
+    result=np.dot(matrixa,matrixb)
+    print(result)
+else:
+    print("Error! Row and column size should be same")
