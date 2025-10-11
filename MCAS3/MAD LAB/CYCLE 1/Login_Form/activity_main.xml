@@ -55,7 +55,7 @@
         android:layout_width="347dp"
         android:layout_height="56dp"
         android:layout_marginStart="40dp"
-        android:text="   Password"
+        android:text="Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
